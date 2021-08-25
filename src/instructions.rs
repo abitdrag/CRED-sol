@@ -8,7 +8,7 @@ pub enum AcctInstruction{
     uid: u8,
 }
 Action{
-    actionid: u8;
+    actionid: u8
 }
 
 
