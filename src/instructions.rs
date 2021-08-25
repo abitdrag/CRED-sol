@@ -1,19 +1,13 @@
 use solana_program::program_error::ProgramError;
 pub enum AcctInstruction{
-
-
-
-    UID {
-    
-    uid: u8,
-}
-Action{
-    actionid: u8
+    UID { 
+       uid: u8,
+    }
+    Action{
+        actionid: u8
+    }
 }
 
-
-
-}
 impl AcctInstruction {
     /// Unpacks a byte buffer into a  AcctInstruction
     pub fn unpack(input: &[u8]) -> Result<Self> {
@@ -30,5 +24,5 @@ impl AcctInstruction {
         })
     }
 
- //Function to unpack instructi
+ //Function to unpack instruction
 }
